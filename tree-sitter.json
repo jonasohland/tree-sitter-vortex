@@ -1,0 +1,45 @@
+{
+  "$schema": "https://tree-sitter.github.io/tree-sitter/assets/schemas/config.schema.json",
+  "grammars": [
+    {
+      "name": "vortex",
+      "camelcase": "Vortex",
+      "title": "Vortex",
+      "scope": "source.vortex",
+      "path": ".",
+      "file-types": [
+        "vortex",
+        "vx"
+      ],
+      "injection-regex": "^vortex$",
+      "class-name": "TreeSitterVortex",
+      "highlights": [
+        "queries/highlight.scm"
+      ]
+    }
+  ],
+  "metadata": {
+    "version": "0.1.0",
+    "license": "MIT",
+    "description": "Vortex grammar for tree-sitter",
+    "authors": [
+      {
+        "name": "Jonas Ohland",
+        "email": "jonas.ohland@gmail.com",
+        "url": "https://github.com/jonasohland"
+      }
+    ],
+    "links": {
+      "repository": "https://github.com/jonasohland/vortex"
+    }
+  },
+  "bindings": {
+    "c": true,
+    "go": true,
+    "node": true,
+    "python": true,
+    "rust": true,
+    "swift": true,
+    "zig": false
+  }
+}
