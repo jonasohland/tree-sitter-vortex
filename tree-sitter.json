@@ -14,7 +14,7 @@
       "injection-regex": "^vortex$",
       "class-name": "TreeSitterVortex",
       "highlights": [
-        "queries/highlight.scm"
+        "queries/vortex/highlights.scm"
       ]
     }
   ],
