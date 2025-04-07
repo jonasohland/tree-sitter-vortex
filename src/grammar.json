@@ -67,6 +67,10 @@
             {
               "type": "SYMBOL",
               "name": "_newline"
+            },
+            {
+              "type": "STRING",
+              "value": ";"
             }
           ]
         }
@@ -107,7 +111,7 @@
     },
     "identifier": {
       "type": "PATTERN",
-      "value": "[^\\s\"'#}][^\\s]*"
+      "value": "[^\\s\"'#;}][^\\s;]*"
     },
     "comment": {
       "type": "SEQ",

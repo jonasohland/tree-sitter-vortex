@@ -30,7 +30,8 @@ module.exports = grammar({
       ),
       choice(
         $.comment,
-        $._newline
+        $._newline,
+        ';'
       )
     ),
 
@@ -47,7 +48,7 @@ module.exports = grammar({
 
     number: $ => /[+-]?([0-9]*[.])?[0-9]+/,
 
-    identifier: $ => /[^\s"'#}][^\s]*/,
+    identifier: $ => /[^\s"'#;}][^\s;]*/,
 
     comment: $ => seq('#', /[^\n]*/, $._newline),
     
